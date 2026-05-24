@@ -37,13 +37,14 @@
             SalaryBox = new TextBox();
             PasswordBox = new TextBox();
             UserDataGridView = new DataGridView();
+            SubmitBtn = new Button();
             ((System.ComponentModel.ISupportInitialize)UserDataGridView).BeginInit();
             SuspendLayout();
             // 
             // UserNameLabel
             // 
             UserNameLabel.AutoSize = true;
-            UserNameLabel.Location = new Point(57, 44);
+            UserNameLabel.Location = new Point(60, 44);
             UserNameLabel.Name = "UserNameLabel";
             UserNameLabel.Size = new Size(63, 15);
             UserNameLabel.TabIndex = 0;
@@ -52,7 +53,7 @@
             // AgeLabel
             // 
             AgeLabel.AutoSize = true;
-            AgeLabel.Location = new Point(57, 96);
+            AgeLabel.Location = new Point(60, 82);
             AgeLabel.Name = "AgeLabel";
             AgeLabel.Size = new Size(31, 15);
             AgeLabel.TabIndex = 1;
@@ -61,7 +62,7 @@
             // SalaryLabel
             // 
             SalaryLabel.AutoSize = true;
-            SalaryLabel.Location = new Point(57, 148);
+            SalaryLabel.Location = new Point(60, 120);
             SalaryLabel.Name = "SalaryLabel";
             SalaryLabel.Size = new Size(41, 15);
             SalaryLabel.TabIndex = 2;
@@ -70,7 +71,7 @@
             // PasswordLabel
             // 
             PasswordLabel.AutoSize = true;
-            PasswordLabel.Location = new Point(57, 200);
+            PasswordLabel.Location = new Point(60, 158);
             PasswordLabel.Name = "PasswordLabel";
             PasswordLabel.Size = new Size(60, 15);
             PasswordLabel.TabIndex = 3;
@@ -85,21 +86,21 @@
             // 
             // AgeBox
             // 
-            AgeBox.Location = new Point(142, 92);
+            AgeBox.Location = new Point(142, 78);
             AgeBox.Name = "AgeBox";
             AgeBox.Size = new Size(100, 23);
             AgeBox.TabIndex = 5;
             // 
             // SalaryBox
             // 
-            SalaryBox.Location = new Point(142, 144);
+            SalaryBox.Location = new Point(142, 116);
             SalaryBox.Name = "SalaryBox";
             SalaryBox.Size = new Size(100, 23);
             SalaryBox.TabIndex = 6;
             // 
             // PasswordBox
             // 
-            PasswordBox.Location = new Point(142, 196);
+            PasswordBox.Location = new Point(142, 154);
             PasswordBox.Name = "PasswordBox";
             PasswordBox.Size = new Size(100, 23);
             PasswordBox.TabIndex = 7;
@@ -112,11 +113,22 @@
             UserDataGridView.Size = new Size(495, 179);
             UserDataGridView.TabIndex = 8;
             // 
+            // SubmitBtn
+            // 
+            SubmitBtn.Location = new Point(60, 196);
+            SubmitBtn.Name = "SubmitBtn";
+            SubmitBtn.Size = new Size(182, 23);
+            SubmitBtn.TabIndex = 9;
+            SubmitBtn.Text = "Submit";
+            SubmitBtn.UseVisualStyleBackColor = true;
+            SubmitBtn.Click += SubmitBtn_Click;
+            // 
             // UserForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 270);
+            Controls.Add(SubmitBtn);
             Controls.Add(UserDataGridView);
             Controls.Add(PasswordBox);
             Controls.Add(SalaryBox);
@@ -144,5 +156,6 @@
         private TextBox SalaryBox;
         private TextBox PasswordBox;
         private DataGridView UserDataGridView;
+        private Button SubmitBtn;
     }
 }
